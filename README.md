@@ -1,5 +1,5 @@
 # Simple Algorithms
-Here I will provide an explanation of some of the challenges from FreecodeCamp or CodeWars, as a reference for some topic questions<br />
+Here I will provide an explanation of some of the challenges from CodeWars or FreecodeCamp, as a reference for some topic questions<br />
 
 ### Basic Algorithmic Scripting
 
