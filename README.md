@@ -1,8 +1,8 @@
 # Simple Algorithms
-Here I will provide an explanation of some of the challenges from CodeWars or FreecodeCamp, as a reference for some topic questions<br />
+Here I will provide an explanation of some of the easy challenges any platform coding question<br />
 
 ### Basic Algorithmic Scripting
-
+> FreecodeCamp
 Return true if the string in the first element of the array contains all of the letters of the string in the second element of the array.
 For example, *["hello", "Hello"]*, should return true because all of the letters in the second string are present in the first, ignoring case.
 The arguments *["hello", "hey"]* should return false because the string hello does not contain a y.
@@ -43,7 +43,7 @@ console.log(mutation(["hello", "hey"]));
 **return ind >= arr[1].length** Because the constraints above allow the value of arr[1] to be repeated, >= is required to see all values of arr[0] present and to rule out excess presence of arr[1]
 
 ### Binary Addition
-
+> Codewars
 Implement a function that adds two numbers together and returns their sum in binary. The conversion can be done before, or after the addition.
 The binary number returned should be a string.
 
