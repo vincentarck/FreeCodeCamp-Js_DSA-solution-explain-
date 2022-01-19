@@ -40,24 +40,19 @@ Return the absolute difference between the sums of the matrix's two diagonals as
 **Solution in JS**
 
 ```javascript
+// Time Complexity O(N)
 function diagonalDifference(arr) {
-    // To sum answer in left diagonal and right diagonal
-    let left = 0,
-        right = 0
-    // Pointer to keep track value of each row and column 
-    //in left and right diagonal respectively
-    let Pleft = 0;
-    let Pright = arr.length;
-    // Just using single loop
-    // Then get those value that corresponding to left and right diagonal
-    for(let i=0;i<arr.length;i++){
-        // update left diagonal
-        Pleft = i
-        // update right diagonal
-        Pright = Pright-1
-        
-        left+=arr[i][Pleft]
-        right+=arr[i][Pright]
+    // Write your code here
+    // Left diagonal itu selalu berada di baris dan kolom yang sama, kita simpan di variable j
+    // Right diagonal itu selalu di indeks akhir arr, dikurang 1 setiap baris, kita simpan di variable i
+    let i=arr.length-1, j=0;
+    // jumlah diagonal sisi kiri dan kanan
+    let left=0,right=0;
+    while(i>=0 && j<arr.length){
+        left+=arr[j][j]
+        right+=arr[j][i]
+        j+=1
+        i-=1
     }
     return Math.abs(left-right)
 }
