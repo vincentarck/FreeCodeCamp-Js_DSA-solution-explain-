@@ -1,6 +1,5 @@
 function gedung(noLoker){
 	let baseLoker = 5;
-	let cariLoker = 0;
 	let lantai = 0, i=0;
 	while(i<noLoker){
 		i+=baseLoker
